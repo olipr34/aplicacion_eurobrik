@@ -348,6 +348,7 @@ import java.util.Locale;
 
 
          public void alta(View v) {
+             System.out.println("hola");
              // listado = new ArrayList<>();
              AdminBD admin = new AdminBD(MainActivity.this, nombreBD, null, 1);
              SQLiteDatabase bd;
@@ -405,6 +406,8 @@ import java.util.Locale;
 
          public void consultarentradas (View view) {
              listado = new ArrayList<>();
+
+
              AdminBD admin = new AdminBD(this, nombreBD, null, 1);
              SQLiteDatabase bd = admin.getReadableDatabase();
              Cursor fila = bd.rawQuery("select nombre,apellidos,comunidad,localizacion,trabajo,fichaje,fecha,hora from entradas ", null);
