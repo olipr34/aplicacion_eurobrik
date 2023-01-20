@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:id="@+id/editprefBd"
+        android:key="nombreBD"
+        android:title="NOMBRE DE LA BASE DE DATOS"
+        android:summary="Al cambiar el nombe de la base de datos, puede pereder los datos guardados"
+        android:dialogTitle="Introducir un nombre para la Base de Datos"
+        android:inputType="text"/>
+
+
+
+    <PreferenceCategory
+        android:key="categoria1"
+        android:title="PERMISOS">
+        <CheckBoxPreference
+            android:key="MI_CHECK_BOX"
+            android:title="ALMACENAMIENTO"
+            android:summary="ALmacenamiento habilitado"
+            android:defaultValue="true"
+            />
+
+
+
+    </PreferenceCategory>
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switch_preference_1"
+        android:title="ACTIVADO/DESACTIVADO" />
+
+</PreferenceScreen>
