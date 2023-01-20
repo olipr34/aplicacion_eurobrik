@@ -348,7 +348,7 @@ import java.util.Locale;
 
 
          public void alta(View v) {
-         
+
              // listado = new ArrayList<>();
              AdminBD admin = new AdminBD(MainActivity.this, nombreBD, null, 1);
              SQLiteDatabase bd;
